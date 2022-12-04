@@ -1,0 +1,362 @@
+/*******************************************************************************/
+/*  Web de Pedagogía Zenaida                                                   */                                
+/*  Autor: Pablo Brescia Rueda                                                 */
+/*  Versión: 1.0                                                               */
+/*  21 de octubre de 2022                                                      */
+/*******************************************************************************/
+
+/************************ ESTILO GENERAL *******************/
+
+@font-face {
+    font-family: hero ;
+    src: url(../fonts/Elfarg98.ttf);
+}
+
+@font-face {
+    font-family: titulos;
+    src: url(../fonts/TGL_0-1451Eng.ttf);
+}
+
+* {box-sizing:border-box;}
+
+body {background-color: rgba(58, 150, 33, 0.205);
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+
+#wrapper {background-color: rgb(255, 255, 255) ;
+    font-family: Verdana;
+    }
+
+/*********** BARRA DE NAVEGACIÓN ***********/
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  nav {position:sticky;
+    top: 0;
+    z-index: 999; /* Marca el nivel de capa en el que debe aparecer el navegador */
+  } 
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior:smooth;
+  }
+
+/****************** MEDIAQUERIES TOPNAV ********************/
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 750px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 750px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+
+#hero {background-image: url(../images/headerr.png);
+    background-size: cover;
+    background-position: 30%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+#tituloheader {
+    
+    text-align: center;
+    color: rgb(116, 0, 0);
+    font-family: Arial;
+    font-size: 3rem;
+   /* background-color: rgb(255, 255, 255); */
+    border-radius: 1%;
+    width:50%;
+    padding-top: 0.8%;
+   }
+
+   #tituloheader img {width: 50%;}
+
+.titulo { text-align: center;
+font-size: 5rem;
+font-family: titulos;
+padding-top: 5%;}
+
+
+
+
+
+/* COLUMNAS GRID */
+
+#grid3 {display:grid;
+    grid-template-columns: 25% 50% 25%;
+    margin-top: 2%;
+    }
+
+.col3 {margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+/* Selecciono la imagenes de dentro de una columna y les aplico el 100% (todo el ancho de la columna) */
+
+.col3 img {width: 90%;
+margin: auto;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+padding:5%;}
+
+.col3 img:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.col2 img {box-shadow: 1px 1px 10px 1px;}
+
+
+ .col-imagenpregunta {width: 50%;
+    display: block;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    
+    } 
+
+.col-izqimagen {padding-left: 2%;}
+
+#instalaciones {padding-bottom: 6%;}
+
+#Cuandollamar {background-color: rgba(173, 216, 230, 0.281);}
+
+#grid2 {display:grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 2%;}
+/* Selecciono la imagenes de dentro de una columna y les aplico el 100% (todo el ancho de la columna) */
+
+
+.col2 {padding-right: 5%;
+    padding-bottom: 10%;}
+.col2 img {width: 100%;}
+
+
+.textos1 {padding-left: 3%;
+    font-size: 1.3rem;
+margin: 2% 5% 0% 5%;
+font-family: Arial;}
+
+.textos {
+padding-left: 10px;
+font-family: Arial;
+font-size: 1.3rem;
+}
+
+#Quiensoy {background-color: rgba(173, 216, 230, 0.281);
+padding-bottom: 5%;}
+
+#quiensoytitulo {padding-bottom: 3%;}
+
+#grid2quiensoy {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding-left: 10%;
+}
+
+#grid2textoquiensoy {padding-left: 5%;
+padding-right: 15%;
+text-align: justify;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+.container {
+  padding: 2px 16px;
+  background-color: lightgreen;
+ margin-top: -7px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.493);
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.493);
+  transition: 0.3s;
+  padding:3%;
+  font-family: Arial;
+  font-size: 1.3rem;
+  width: 60%;
+  padding-left: 4%;
+}
+
+
+
+
+ .card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.795);
+
+} 
+
+.card img {width: 100%;
+  border-radius: 0%;
+  opacity: 1;
+  transition: 0.4s;   /* Cambio suave */
+  }
+
+  #footer {background-color: rgba(128, 128, 128, 0.158);}
+
+
+  #grid3footer {display:grid;
+    grid-template-columns: 25% 25% 50%;
+    font-family: textos;
+    font-size: 1rem;
+    text-align: left;}
+
+.col3footer {padding: 6%;}
+#ancha {padding: 3%;
+  text-align: center;
+}
+
+.col3footer img {width: 70%;/* Para que la imagen no se salga de su cuadro*/
+       display: block; /* La convierto en un bloque */
+        margin: auto; }  /* Centra la imagen dentro de la columna */
+
+  
+
+.fa { box-sizing: content-box;
+    padding: 15px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+
+
+
+.enlace {
+  text-decoration: none;
+  color: darkred;
+  font-weight: bold;
+}
+
+.enlace:hover {
+  color: red;
+}
+
+.col3footer {font-family: Arial;}
+#linksfooter {text-align: center;}
+
+#grid3footer img {width: 30%;}
+
+#footer {padding-bottom: 2%;}
+
+/***************** MEDIA QUERIES *********************/
+@media only screen and (width<=1100px) {
+  #hero img {width: 80%;}
+}
+
+@media only screen and (width<=850px) {
+  #hero img {width: 100%;}
+}
+
+@media only screen and (width<=600px) {
+  #hero img {width: 150%;
+  padding-right: 45%;}
+  #wrapper {width: 100%;}
+  body {margin: 0;padding: 0;}
+  #grid2 {grid-template-columns: 100%;
+  text-align: center;}
+  #imagenpregunta img{width: 140%;
+  margin-left: -13%;}
+  .textos1 {text-align: justify;
+    padding-bottom: 10%;}
+  .titulo {padding-bottom: 10%;
+  padding-top: 15%;}
+  #grid3 {grid-template-columns: 100%;}
+  #grid2quiensoy{grid-template-columns: 100%;
+  }
+  #cardquiensoy { width: 100%;
+    margin-left: 30%;
+    padding-bottom: 10%;
+  }
+  .card {box-shadow: none}
+  .card:hover {
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.795);
+  } 
+  #grid3footer {grid-template-columns: 100%;}
+  #grid3footer img {width: 80%}
+
+;}
+
+ 
+ 
+  
+
+
