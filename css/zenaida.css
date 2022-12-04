@@ -186,7 +186,7 @@ padding:5%;}
 .col2 img {width: 100%;}
 
 
-.textos1 {padding-left: 3%;
+.textos1 {margin: auto;
     font-size: 1.3rem;
 margin: 2% 5% 0% 5%;
 font-family: Arial;}
@@ -208,12 +208,11 @@ padding-bottom: 5%;}
   padding-left: 10%;
 }
 
-#grid2textoquiensoy {padding-left: 5%;
+#grid2textoquiensoy {padding-left: 0%;
 padding-right: 15%;
 text-align: justify;
-display: flex;
-justify-content: center;
-align-items: center;}
+
+}
 
 .container {
   padding: 2px 16px;
@@ -319,7 +318,8 @@ align-items: center;}
 
 /***************** MEDIA QUERIES *********************/
 @media only screen and (width<=1100px) {
-  #hero img {width: 80%;}
+  #hero img {width: 80%;
+  }
 }
 
 @media only screen and (width<=850px) {
@@ -327,10 +327,16 @@ align-items: center;}
 }
 
 @media only screen and (width<=600px) {
-  #hero img {width: 150%;
-  padding-right: 45%;}
+  #tituloheader {width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0%;
+  }
+ 
   #wrapper {width: 100%;}
   body {margin: 0;padding: 0;}
+  .titulo {font-size: 2.8rem;}
   #grid2 {grid-template-columns: 100%;
   text-align: center;}
   #imagenpregunta img{width: 140%;
@@ -340,16 +346,16 @@ align-items: center;}
   .titulo {padding-bottom: 10%;
   padding-top: 15%;}
   #grid3 {grid-template-columns: 100%;}
-  #grid2quiensoy{grid-template-columns: 100%;
+  #grid2quiensoy{grid-template-columns: 100%;}
+  #grid2textoquiensoy {
+    margin: 2% -7% 0% -7%;
   }
   #cardquiensoy { width: 100%;
     margin-left: 30%;
     padding-bottom: 10%;
   }
   .card {box-shadow: none}
-  .card:hover {
-    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.795);
-  } 
+  .card:hover { box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.795);} 
   #grid3footer {grid-template-columns: 100%;}
   #grid3footer img {width: 80%}
 
