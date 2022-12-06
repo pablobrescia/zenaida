@@ -26,6 +26,7 @@ body {background-color: rgba(58, 150, 33, 0.205);
 
 #wrapper {background-color: rgb(255, 255, 255) ;
     font-family: Verdana;
+   
     }
 
 /*********** BARRA DE NAVEGACIÓN ***********/
@@ -192,7 +193,7 @@ margin: 2% 5% 0% 5%;
 font-family: Arial;}
 
 .textos {
-padding-left: 10px;
+padding-left: 0px;
 font-family: Arial;
 font-size: 1.3rem;
 }
@@ -314,6 +315,29 @@ text-align: justify;
 
 #grid3footer img {width: 30%;}
 
+#dondeestoytexto {text-align: center;
+padding-top: 2%;}
+
+#mapa {
+  
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  align-items: center;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  height: 60%;
+ 
+}
+
 #footer {padding-bottom: 2%;}
 
 /***************** MEDIA QUERIES *********************/
@@ -326,36 +350,36 @@ text-align: justify;
   #hero img {width: 100%;}
 }
 
-@media only screen and (width<=600px) {
+@media only screen and (width<=650px) {
   #tituloheader {width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 0%;
-  }
- 
+    margin-right: 0%;}
   #wrapper {width: 100%;}
-  body {margin: 0;padding: 0;}
+  body {margin: 0; padding:  0;} 
   .titulo {font-size: 2.8rem;}
   #grid2 {grid-template-columns: 100%;
   text-align: center;}
   #imagenpregunta img{width: 140%;
   margin-left: -13%;}
   .textos1 {text-align: justify;
-    padding-bottom: 10%;}
-  .titulo {padding-bottom: 10%;
-  padding-top: 15%;}
-  #grid3 {grid-template-columns: 100%;}
-  #grid2quiensoy{grid-template-columns: 100%;}
-  #grid2textoquiensoy {
-    margin: 2% -7% 0% -7%;
-  }
-  #cardquiensoy { width: 100%;
-    margin-left: 26%;
     padding-bottom: 10%;
   }
-  .card {box-shadow: none}
+ .titulo {padding-bottom: 10%;
+  padding-top: 15%;}
+ #grid3 {grid-template-columns: 100%;}
+  #grid2quiensoy{grid-template-columns: 100%;}
+  #grid2textoquiensoy { 
+  margin-left: -8%;
+  padding-right: 4%; } 
+  #cardquiensoy { width: 100%;
+  margin-left: 26%;
+  padding-bottom: 10%; } 
+  .card {box-shadow: none} 
   .card:hover { box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.795);} 
+  .responsive-iframe {width: 100%;
+  height: 100%;}
   #grid3footer {grid-template-columns: 100%;}
   #grid3footer img {width: 80%}
 
