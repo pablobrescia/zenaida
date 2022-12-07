@@ -379,6 +379,8 @@ text-align: center;
 padding-top: 5%;
 padding-bottom: 3%;}
 
+#colcontactoimagen img {box-shadow: 1px 1px 10px 1px;}
+
 #footer {padding-bottom: 2%;}
 
 /***************** MEDIA QUERIES *********************/
@@ -434,10 +436,12 @@ padding-bottom: 8%;
 margin-left: 3%;
 margin-right: 4%;}
 #grid2contacto {grid-template-columns: 100%;}
-#colcontactotexto {padding-top: 5%;
+#colcontactotexto {padding-top: 9%;
 
   margin-left: 13%;
 text-align: justify;}
+#contactotitulo {padding-bottom: 2%;}
+#colcontactoimagen img {width: 65%;}
 
 }
 
