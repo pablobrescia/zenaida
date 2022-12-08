@@ -19,12 +19,14 @@
 
 * {box-sizing:border-box;}
 
-body {background-color: rgba(58, 150, 33, 0.205);
+body {background-image: url(../images/backgroundjuguetes.jpg);
+  background-color: rgba(58, 150, 33, 0.205);
   margin-left: 5%;
   margin-right: 5%;
   }
 
-#wrapper {background-color: rgb(255, 255, 255) ;
+#wrapper {
+  background-color: rgb(255, 255, 255) ;
     font-family: Verdana;
    
     }
@@ -493,8 +495,3 @@ text-align: justify;}
 margin-left: 19%;}
 .col3 img {width: 180%;}
 }
-
- 
- 
-  
-
