@@ -227,11 +227,11 @@ text-align: justify;
   /* Add shadows to create the "card" effect */
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.493);
   transition: 0.3s;
-  padding:3%;
+  padding:3%; 
   font-family: Arial;
   font-size: 1.3rem;
   width: 60%;
-  padding-left: 4%;
+  padding-left: 4%; 
 }
 
 
@@ -384,16 +384,54 @@ padding-bottom: 3%;}
 #footer {padding-bottom: 2%;}
 
 /***************** MEDIA QUERIES *********************/
-@media only screen and (width<=1100px) {
-  #hero img {width: 80%;
+@media only screen and (width<=1800px) {
+  #hero img {width: 50%;
   }
+
+.card {box-shadow: none;
+padding-left: 0; } 
+.card:hover { box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.795);} 
+
+
+
 }
+
+@media only screen and (width<=1200px) {
+  #hero img {width: 80%;}
+  .card {box-shadow: none;
+  padding: 0;} 
+  .card:hover { box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.795);} 
+#grid2quiensoy {grid-template-columns: 100%;}
+.card {width: 45%;
+display: block;
+margin-left: 22%;
+ }
+#quiensoytitulo {
+  padding-bottom: 0%;
+}
+/*.col3vertical img {width: 50%;}*/
+#cardquiensoy {padding-top: 15%;}
+#grid2 {grid-template-columns: 100%;
+  text-align: center;}
+#cuandollamartitulo {padding-bottom: 8%;}
+#imagenpregunta img {margin-left: 7%;}
+#comopsicopedagoga {padding-left: 7%;
+padding-top: -5%;}
+#grid3 {grid-template-columns: 100%;
+width: 50%;
+margin: auto;
+padding: 2%;}
+
+.col3 img {box-shadow: none;}
 
 @media only screen and (width<=850px) {
-  #hero img {width: 100%;}
+  #hero img {width: 100%;
+  }
+
+}
 }
 
-@media only screen and (width<=650px) {
+@media only screen and (width<=600px) {
   #tituloheader {width: 80%;
     display: flex;
     justify-content: center;
@@ -407,11 +445,11 @@ padding-bottom: 3%;}
   #imagenpregunta img{width: 140%;
   margin-left: -13%;}
   .textos1 {text-align: justify;
-    padding-bottom: 10%;
+    padding-bottom: 10%; 
   }
  .titulo {padding-bottom: 10%;
   padding-top: 15%;}
- #grid3 {grid-template-columns: 100%;}
+  #grid3 {grid-template-columns: 100%;}
   #grid2quiensoy{grid-template-columns: 100%;}
   #grid2textoquiensoy { 
   margin-left: -8%;
@@ -419,7 +457,8 @@ padding-bottom: 3%;}
   #cardquiensoy { width: 100%;
   margin-left: 26%;
   padding-bottom: 10%; } 
-  .card {box-shadow: none} 
+  .card {box-shadow: none;
+  margin-left: 10%; }
   .card:hover { box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.795);} 
   .responsive-iframe {width: 100%;
   height: 100%;}
@@ -442,11 +481,10 @@ margin-right: 4%;}
 text-align: justify;}
 #contactotitulo {padding-bottom: 2%;}
 #colcontactoimagen img {width: 65%;}
-
+.col3 img {width: 180%;}
 }
 
  
  
   
-
 
