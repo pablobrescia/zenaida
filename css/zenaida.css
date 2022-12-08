@@ -248,14 +248,17 @@ text-align: justify;
   transition: 0.4s;   /* Cambio suave */
   }
 
-  #footer {background-color: rgba(128, 128, 128, 0.158);}
+  #footer {background-color: rgba(128, 128, 128, 0.158);
+}
 
 
   #grid3footer {display:grid;
-    grid-template-columns: 25% 25% 50%;
+    grid-template-columns: 25% auto auto;
     font-family: textos;
     font-size: 1rem;
-    text-align: left;}
+    text-align: left;
+  align-items: center;
+}
 
 .col3footer {padding: 6%;}
 #ancha {padding: 3%;
@@ -314,7 +317,8 @@ text-align: justify;
 .col3footer {font-family: Arial;}
 #linksfooter {text-align: center;}
 
-#grid3footer img {width: 30%;}
+#grid3footer img {width: 50%;
+}
 
 #dondeestoytexto {text-align: center;
 padding-top: 3%;}
@@ -469,6 +473,7 @@ padding-top: 5%;}
   height: 100%;}
   #grid3footer {grid-template-columns: 100%;}
   #grid3footer img {width: 80%}
+  
   .mapa {width: 100%;
   }
 .containermapa {
