@@ -423,6 +423,11 @@ margin: auto;
 padding: 2%;}
 
 .col3 img {box-shadow: none;}
+#grid2contacto {grid-template-columns: 100%;}
+#colcontactotexto {padding-left: 14%;
+  padding-right: 10%;
+padding-top: 5%;}
+#horario {text-align: center;}
 
 @media only screen and (width<=850px) {
   #hero img {width: 100%;
@@ -477,10 +482,10 @@ margin-right: 4%;}
 #grid2contacto {grid-template-columns: 100%;}
 #colcontactotexto {padding-top: 9%;
 
-  margin-left: 13%;
 text-align: justify;}
 #contactotitulo {padding-bottom: 2%;}
-#colcontactoimagen img {width: 65%;}
+#colcontactoimagen img {width: 62%;
+margin-left: 19%;}
 .col3 img {width: 180%;}
 }
 
