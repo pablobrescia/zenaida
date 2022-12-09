@@ -52,6 +52,7 @@ body {background-image: url(../images/backgroundjuguetes.jpg);
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-family: Verdana;
   }
   
   /* Change the color of links on hover */
@@ -343,6 +344,9 @@ padding-bottom: 3%;}
 #grid3footer img {width: 50%;}
 
 #footer {padding-bottom: 2%;}
+
+
+
 
 /***************** MEDIA QUERIES *********************/
 @media only screen and (width<=1800px) {
